@@ -1,0 +1,168 @@
+body{
+    background: linear-gradient(to right, rgb(0, 104, 71), white 33.3%, white 66.6%, rgb(206, 17, 38));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden; /* Prevenir el desbordamiento horizontal */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Modelo de caja más intuitivo */
+}
+header, nav{
+    width: 100%;
+    min-height: 15vh; /* Altura mínima, puede crecer si es necesario */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permite que los enlaces se reorganicen en pantallas pequeñas */
+    padding: 10px;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px; /* Ancho máximo para el contenido principal */
+    margin: auto;
+}
+
+/* Estilos específicos para las páginas de recetas (TPD.html, SHE.html, etc.) */
+/* Usamos :has() para aplicar estilos solo si main contiene .sec2 */
+main:has(.sec2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sec img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.sec:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.sec a, header nav a {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.sec a:hover, header nav a:hover {
+    background-color: #218838;
+}
+
+.imgp{
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    object-fit: cover;
+}
+.lis{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+footer{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Estilos para las secciones de las recetas */
+.sec2, .sec3 {
+    width: 100%;
+    max-width: 800px; /* Un ancho máximo para buena legibilidad */
+    height: auto; /* La altura se ajusta al contenido */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px; /* Espacio entre secciones */
+    text-align: left; /* Alineación del texto para listas */
+}
+
+.sec2 h1, .sec3 h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.sec2 ul, .sec2 ol {
+    width: 100%;
+    padding-left: 40px; /* Indentación para las listas */
+}
+
+.imgPpT{
+    width: 100%;
+    max-width: 500px; /* Ancho máximo para la imagen de la receta */
+    height: auto;
+    border-radius: 15px;
+}
+.btn-config:hover {
+    background-color: rgb(206, 17, 38);
+}
+
+/* --- ESTILOS PARA MODO OSCURO --- */
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode header, .dark-mode footer {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #333;
+}
+
+.dark-mode main, .dark-mode .sec {
+    background-color: #242424;
+}
+
+.dark-mode .sec {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.dark-mode .sec:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode h3 {
+    color: #ffffff;
+}
+
+.dark-mode .sec2 h1 {
+    color: #ff8c42;
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog-culinario</title>
+    <link rel="stylesheet" href="es.css">
+        <script>
+        // Aplica el modo oscuro inmediatamente al cargar la página si está guardado
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="contacto.html">Contacto y Creadores</a>
+            <a href="suscripcion.html">Suscribirse</a>
+            <a href="configuracion.html">Configuración</a>
+        </nav>
+    </header>
+    <main>
+        <section class="sec2">
+            <h1>Ingredientes:</h1>
+            <ul>
+                <li>200g de pasta (tu elección)</li>
+                <li>100g de tomates cherry, cortados por la mitad</li>
+                <li>50g de hojas de albahaca fresca</li>
+                <li>2 dientes de ajo</li>
+                <li>50g de piñones (puedes sustituir por nueces o almendras)</li>
+                <li>50g de queso parmesano rallado</li>
+                <li>100ml de aceite de oliva virgen extra</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+        </section>
+        <section class="sec3">
+            <img class="imgPpT" src="imgPpT.jpg" alt="">
+        </section>
+        <section class="sec2">
+            <h1>Preparación:</h1>
+            <ol>
+                <li>Cocina la pasta según las instrucciones del paquete. Escurre y reserva.</li>
+                <li>En una sartén, tuesta los piñones a fuego medio hasta que estén dorados.</li>
+                <li>En un procesador de alimentos, combina la albahaca, ajo, piñones, queso parmesano y aceite de oliva. Procesa hasta obtener una salsa homogénea.</li>
+                <li>Mezcla la pasta con la salsa y los tomates cherry. Ajusta la sal y pimienta al gusto.</li>
+            </ol>
+        </section>
+    </main>
+    <footer>
+        <H1>Pasta al pesto con Tomate</H1>
+        <h2>Hecho por: HECS</h2>
+    </footer>
+</body>
+<script src="modo-oscuro.js"></script>
+</html>

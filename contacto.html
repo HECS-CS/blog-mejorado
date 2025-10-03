@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Blog Culinario</title>
+    <link rel="stylesheet" href="es.css">
+        <script>
+        // Aplica el modo oscuro inmediatamente al cargar la página si está guardado
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
+
+</head>
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="contacto.html">Contacto y Creadores</a>
+            <a href="suscripcion.html">Suscribirse</a>
+            <a href="configuracion.html">Configuración</a>
+        </nav>
+    </header>
+    <main>
+        <section class="sec2" style="text-align: center; width: 100%; padding: 40px;">
+            <h1>Contacto y Creadores</h1>
+            <p>Numero Telefonico: 3334448881</p>
+            <h2>Creadores</h2>
+            <p>Este blog fue creado por HECS.</p>
+            <h2>Contacto</h2>
+            <p>Puedes contactarnos a través de nuestro correo electrónico: <a href="mailto:info@blogculinario.com">info@blogculinario.com</a> o llenando el siguiente formulario.</p>
+
+            <form action="" method="POST" id="contact-form">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <H1>Con Las Manos En la Masa</H1>
+        <h2>Hecho por: HECS</h2>
+    </footer>
+</body>
+<script src="modo-oscuro.js"></script>
+</html>

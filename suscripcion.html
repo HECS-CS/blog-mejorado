@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscripción - Blog Culinario</title>
+    <link rel="stylesheet" href="es.css">
+        <script>
+        // Aplica el modo oscuro inmediatamente al cargar la página si está guardado
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
+
+</head>
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="contacto.html">Contacto y Creadores</a>
+            <a href="suscripcion.html">Suscribirse</a>
+            <a href="configuracion.html">Configuración</a>
+        </nav>
+    </header>
+    <main>
+        <section class="sec2" style="text-align: center; width: 100%; padding: 40px;">
+            <h1>Suscríbete a Nuestro Boletín</h1>
+            <p>Recibe las últimas recetas y noticias directamente en tu correo.</p>
+            <form>
+                <input type="email" placeholder="Tu correo electrónico" required style="padding: 10px; width: 300px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                <button type="submit" style="background-color: #28a745; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; display: inline-block; font-weight: bold; border: none; cursor: pointer;">Suscribirse</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <H1>Con Las Manos En la Masa</H1>
+        <h2>Hecho por: HECS</h2>
+    </footer>
+</body>
+<script src="modo-oscuro.js"></script>
+</html>

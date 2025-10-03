@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuraciones - Blog Culinario</title>
+    <link rel="stylesheet" href="es.css">
+    <script>
+        // Aplica el modo oscuro inmediatamente al cargar la página si está guardado
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="contacto.html">Contacto y Creadores</a>
+            <a href="suscripcion.html">Suscribirse</a>
+            <a href="configuraciones.html">Configuraciones</a>
+        </nav>
+    </header>
+    <main>
+        <section class="sec2" style="text-align: center;">
+            <h1>Configuraciones de Apariencia</h1>
+            <p>Usa el siguiente botón para cambiar entre el tema claro y oscuro.</p>
+            <button id="darkModeToggle" class="btn-config">Activar Modo Oscuro</button>
+        </section>
+    </main>
+    <footer>
+        <H1>Con Las Manos En la Masa</H1>
+        <h2>Hecho por: HECS</h2>
+    </footer>
+
+    <script>
+        const toggleButton = document.getElementById('darkModeToggle');
+        const htmlElement = document.documentElement;
+
+        // Función para actualizar el texto del botón
+        function updateButtonText() {
+            if (htmlElement.classList.contains('dark-mode')) {
+                toggleButton.textContent = 'Desactivar Modo Oscuro';
+            } else {
+                toggleButton.textContent = 'Activar Modo Oscuro';
+            }
+        }
+
+        // Cargar estado inicial del botón
+        updateButtonText();
+
+        toggleButton.addEventListener('click', () => {
+            // Alternar la clase en el elemento <html>
+            htmlElement.classList.toggle('dark-mode');
+
+            // Guardar la preferencia en localStorage
+            if (htmlElement.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+            }
+            
+            // Actualizar el texto del botón
+            updateButtonText();
+        });
+    </script>
+</body>
+</html>

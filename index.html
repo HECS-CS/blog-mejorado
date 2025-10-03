@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog-culinario</title>
+    <link rel="stylesheet" href="es.css">
+        <script>
+        // Aplica el modo oscuro inmediatamente al cargar la página si está guardado
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
+
+</head>
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="contacto.html">Contacto y Creadores</a>
+            <a href="suscripcion.html">Suscribirse</a>
+            <a href="configuracion.html">Configuración</a>
+        </nav>
+    </header>
+    <main>
+        <section class="sec">
+            <img src="imgPpT.jpg" alt="Pasta al pesto con Tomate" class="recipe-image">
+            <h3>Pasta al pesto con Tomate</h3>
+            <ul>
+                <li class="lis"><a href="PpT.html">Ver Receta</a></li>
+            </ul>
+        </section>
+        <section class="sec">
+            <img src="imgSHE.jpg" alt="Salmon al Horno con Esparragos y limon" class="recipe-image">
+            <h3>Salmon al Horno con Esparragos y limon</h3>
+            <ul>
+                <li class="lis"><a href="SHE.html">Ver Receta</a></li>
+            </ul>
+        </section>
+        <section class="sec">
+            <img src="imgTPD.jpg" alt="Tacos de Pollo Desmenuzado" class="recipe-image">
+            <h3>Tacos de Pollo Desmenuzado</h3>
+            <ul>
+                <li class="lis"><a href="TPD.html">Ver Receta</a></li>
+            </ul>
+        </section>
+        <section class="sec">
+            <img src="imgSTA.jpg" alt="Sopa de Tomate Asado" class="recipe-image">
+            <h3>Sopa de Tomate Asado</h3>
+            <ul>
+                <li class="lis"><a href="STA.html">Ver Receta</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <H1>Con Las Manos En la Masa</H1>
+        <h2>Hecho por: HECS</h2>
+    </footer>
+</body>
+<script src="modo-oscuro.js"></script>
+</html>
